@@ -2,6 +2,8 @@
 
 This repository is a collection of steps for hosting a variety of server applications using [Docker](https://www.docker.com/) and [Portainer](https://github.com/portainer/portainer) on RaspberryPi.
 
+![alt text](https://github.com/akkupy/Homelab/blob/main/images/rpi4.jpg?raw=true)
+
 ### Installation
 Run `install_docker.sh`, to install docker, and add the current user to the docker usergroup.
 
@@ -20,7 +22,6 @@ After a reboot, run `install_portainer.sh`, to install Portainer.io
 
 ```
 wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_portainer.sh | bash
-
 ```
 
 ### Login to Portainer.
