@@ -40,8 +40,9 @@ List of all Documents used within this project.
 | File Name | Description |
 | --------- | ----------- |
 |[nginx_proxy_manager.md](./docs/nginx_proxy_manager.md)|Install and setup instructions for Nginx Proxy Manager (NPM)|
+|[self_signed_cert.md](https://github.com/akkupy/Self_Signed_SSL_Cerificate)|Follow these steps for SSL Certificate Authority for Local Https Development(can be used with NPM)|
 |[pi-hole.md](../docs/pi-hole.md)|Install and Setup Pi-Hole for Network-Wide Ad Block|
-|[wireguard-install.md](../docs/wireguard-install.md)|Install and setup instructions for the WireGuard VPN Server|
+
 
 
 
