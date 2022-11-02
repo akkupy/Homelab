@@ -1,7 +1,7 @@
 # Vaultwarden
 
 <p align="center">
-  <img src="../images/bitwarden.png" />
+  <img src="../images/bitwarden.png" width="512"/>
 </p>
 
 ## Introduction
