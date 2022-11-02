@@ -1,3 +1,3 @@
 # Vaultwarden
 
-![](../images/bitwarden.jpg)
+![](../images/bitwarden.png)
