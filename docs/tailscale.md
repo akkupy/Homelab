@@ -35,7 +35,7 @@ If the device you added is a server or remotely-accessed device, you may want to
 
 ## (Optional) Setting Up Raspberry Pi as an Exit Node.
 
-1. Enable IP Forwarding
+1. **Enable IP Forwarding**
 
 For many distros such as Ubuntu, Debian, CentOS, RHEL, Fedora, and more, you can enable IP forwarding with these commands:
 
@@ -45,7 +45,7 @@ echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p /etc/sysctl.conf
 ```
 
-2. If your Linux node uses firewalld, you may need to also allow masquerading due to a known issue. As a workaround, you can allow masquerading with this command:
+2. **If your Linux node uses firewalld, you may need to also allow masquerading due to a known issue. As a workaround, you can allow masquerading with this command:**
 
 ```
 firewall-cmd --permanent --add-masquerade
@@ -54,7 +54,7 @@ Other distros may require different steps.
 
 When enabling IP forwarding, ensure your firewall is set up to deny traffic forwarding by default. This is a default setting for common firewalls like ufw and firewalld, and ensures your device doesn’t route traffic you don’t intend.
 
-3. Advertise the device as an exit node.
+3. **Advertise the device as an exit node.**
 
 From the device you’d like to use as an exit node, re-run tailscale up with the --advertise-exit-node flag, along with any other flags you normally use:
 
@@ -64,7 +64,7 @@ sudo tailscale up --advertise-exit-node
 ```
 If the device is authenticated by a user who can approve exit nodes in autoApprovers, then the exit node will automatically be approved.
 
-4. Allow the exit node from the admin console.
+4. **Allow the exit node from the admin console.**
 
 This step is not required if using autoApprovers.
 
@@ -78,13 +78,13 @@ Once you’ve found the machine, from the menu, open the **Edit route settings**
 
 ![](../images/exit-node-admin-toggle.png)
 
-5. Use the exit node
+5. **Use the exit node**
 
 You can now use the exit node from devices in your network. Each device must enable the exit node separately.
 
 Check out the [doc](https://tailscale.com/kb/1103/exit-nodes/?tab=linux#step-3-use-the-exit-node)
 
-6. Done.
+6. **Done.**
 You can verify that your traffic is routed by another device by checking your public IP address using [online tools](https://www.whatismyip.com/). You should see the exit node’s public IP rather than your local device’s IP.
 
 You can disable routing through the exit node at any time by selecting None from the same menu used in step 5.
