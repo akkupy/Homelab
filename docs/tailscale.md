@@ -76,7 +76,7 @@ Open the machines page in the admin console, and locate the exit node device. Yo
 
 Once you’ve found the machine, from the menu, open the **Edit route settings** panel, and enable the **Use as exit node** option.
 
-![](../images/exit-node-admin-toggle.png)
+![](../images/exit-node-admin-toggle.png =250x250)
 
 5. **Use the exit node**
 
