@@ -6,13 +6,6 @@
 
 ![](https://i0.wp.com/pi-hole.net/wp-content/uploads/2018/12/dashboard.png?zoom=1.75&w=3840&ssl=1)
 
-There is 2 options available:
-
-- **[Pi-Hole](#pi-hole-installation)**: It's a docker with Pi-Hole only
-- **[Pi-Hole-Unbound](#pi-hole-unbound-installation)**: Docker built with [Unbound](https://nlnetlabs.nl/projects/unbound/about/) software integrated for self-hosted DNS server.
-
-
-
 ## Pi-Hole Installation
 
 ## Method: 1 (Auto)
