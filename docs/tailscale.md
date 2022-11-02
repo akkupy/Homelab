@@ -33,7 +33,7 @@ tailscale ip -4
 
 If the device you added is a server or remotely-accessed device, you may want to consider [disabling key expiry](https://tailscale.com/kb/1028/key-expiry/) to prevent the need to periodically re-authenticate.
 
-### (Optional) Setting Up Raspberry Pi as an Exit Node.
+## (Optional) Setting Up Raspberry Pi as an Exit Node.
 
 1. Enable IP Forwarding
 
