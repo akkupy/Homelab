@@ -22,10 +22,12 @@ This will preserve any persistent data under /vaultwarden of User Directory, you
 
 **IMPORTANT**: Some web browsers, like Chrome, disallow the use of Web Crypto APIs in insecure contexts. In this case, you might get an error like `Cannot read property 'importKey'`. To solve this problem, you need to access the web vault from HTTPS. 
 
-This can be configured in [vaultwarden directly](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-HTTPS) or using a third-party reverse proxy ([some examples](https://github.com/dani-garcia/vaultwarden/wiki/Proxy-examples)).
+2. This can be configured in [vaultwarden directly](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-HTTPS) or using a third-party reverse proxy [NPM](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md)(Recommended).
 
 If you have an available domain name, you can get HTTPS certificates with [Let's Encrypt](https://letsencrypt.org/), or you can generate [self-signed certificates](https://github.com/akkupy/Self_Signed_SSL_Cerificate). Some proxies automatically do this step, like Caddy.
 
 # Post Installation
 
-Access the Web UI by Going to <https://raspberrypi_ip:4001>
+Access the Web UI by going to <https://raspberrypi_ip:4001> or by using the Nginx Reverse Proxy Domain Address.
+
+Sign up a new account and start using the service.
