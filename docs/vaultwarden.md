@@ -1,6 +1,6 @@
 # Vaultwarden
 
-![](../images/bitwarden.png)
+<div style="text-align:center"><img src="../images/bitwarden.png" /></div>
 
 ## Introduction
 
