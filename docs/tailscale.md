@@ -72,7 +72,7 @@ An admin in your network must now allow this device to be used as an exit node.
 
 Open the machines page in the admin console, and locate the exit node device. You can look for the Exit Node badge in the machines list, or use the is:exit-node filter in the search bar to see all devices claiming to be exit nodes.
 
-![](../images/exit-node-admin-list.png)
+<img src="../images/exit-node-admin-list.png" width="48">
 
 Once you’ve found the machine, from the menu, open the **Edit route settings** panel, and enable the **Use as exit node** option.
 
