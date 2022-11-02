@@ -1,6 +1,8 @@
 # Vaultwarden
 
-<div style="text-align:center"><img src="../images/bitwarden.png" /></div>
+<p align="center">
+  <img src="../images/bitwarden.png" />
+</p>
 
 ## Introduction
 
