@@ -15,7 +15,7 @@ printf 'Downloading pihole Container'
 docker run -d \
     --name pihole \
     -p 53:53/tcp -p 53:53/udp \
-    -p 80:80 \
+    -p 4000:80 \
     -e TZ="Asia/Kolkata" \
     -v "/home/$USER/pi_hole/etc-pihole:/etc/pihole" \
     -v "/home/$USER/pi_hole/etc-dnsmasq.d:/etc/dnsmasq.d" \

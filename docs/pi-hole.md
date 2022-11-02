@@ -57,7 +57,7 @@ services:
       - "53:53/tcp"
       - "53:53/udp"
       - "67:67/udp" # Only required if you are using Pi-hole as your DHCP server
-      - "80:80/tcp"
+      - "4000:80/tcp"
     environment:
       TZ: 'America/Chicago'
       # WEBPASSWORD: 'set a secure password here or it will be random'
@@ -103,7 +103,7 @@ You can set a new password opening the Console through Portainer and typing `pih
 
 You can find more commands to run [here](https://docs.pi-hole.net/core/pihole-command/).
 
-With the admin password, go to `http://<Raspberry IP>/admin` to access Pi-Hole web interface and log in.
+With the admin password, go to `http://<Raspberry IP>:4000/admin` to access Pi-Hole web interface and log in.
 
 Change the DNS settings *Interface listening behavior* to "Listen on all interfaces, permit all origins", if using Docker's default `bridge` network setting. (This can also be achieved by setting the environment variable `DNSMASQ_LISTENING` to `all`)
 
