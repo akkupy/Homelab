@@ -113,7 +113,7 @@ Go to `Settings` and select `DNS` on top.
 
 ![](../images/pi-hole_SettingsDNS.png)
 
-On the left hand side you can select anyone of the know DNS providers or insert a custom one on the right hand side (_**Note: if you are using Unbound, the custom DNS is already configured properly**_).
+On the left hand side you can select anyone of the know DNS providers or insert a custom one on the right hand side.
 
 You can also set `Use Conditionnal Forwarding` in order for the Pi-Hole to ask your DHCP server the host name of the local IPs. For this to work, define your local network [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) (I've used 192.168.0.0/16 that covers all possible subnets within 192.168.x.x range), then insert the IP of your DHCP server (normally your router) and optionally a local domain name.
 
