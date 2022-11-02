@@ -16,6 +16,8 @@ Alternative implementation of the Bitwarden server API written in Rust and compa
 
 # Installation
 
+## Method 1 (Auto):
+
 1. **Run the following script**
 
 ```
@@ -23,6 +25,31 @@ wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_
 ```
 
 This will preserve any persistent data under /vaultwarden of User Directory, you can adapt the path to whatever suits you.
+
+## Method 2 (Manual):
+
+### Folder Setup Script
+
+1. First thing we need to do is setup the folder structure. 
+
+Run the following code
+```
+sudo mkdir -p /home/$USER/vaultwarden
+```
+
+2. Now we need to move into that directory using the following:
+
+```
+cd /home/$USER/vaultwarden
+```
+3. Pull the docker image and mount a volume from the host for persistent storage:
+
+```
+docker pull vaultwarden/server:latest
+docker run -d --name vaultwarden -v /home/$USER/vaultwarden:/data/ -p 4001:80 vaultwarden/server:latest
+```
+This will preserve any persistent data under /vaultwarden of User Directory, you can adapt the path to whatever suits you.
+
 
 **IMPORTANT**: Some web browsers, like Chrome, disallow the use of Web Crypto APIs in insecure contexts. In this case, you might get an error like `Cannot read property 'importKey'`. To solve this problem, you need to access the web vault from HTTPS. 
 
