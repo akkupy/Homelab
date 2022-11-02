@@ -46,6 +46,8 @@ nano docker-compose.yml
 ```
 Copy and paste the below Docker-compose exmple into the docker-compose.yml file.
 
+NOTE : Change the TimeZone and Conflicting ports according to your needs.
+
 See example below:
 [Docker-compose](https://docs.docker.com/compose/install/) example:
 
@@ -95,8 +97,6 @@ Or you can check in Portainer by [logging in via your browser](https://github.co
 
 If you see any problems like “unhealthy” Please restart the container and all should be well.
 
-7. Use the Pi-hole web UI to change the DNS settings *Interface listening behavior* to "Listen on all interfaces, permit all origins", if using Docker's default `bridge` network setting. (This can also be achieved by setting the environment variable `DNSMASQ_LISTENING` to `all`)
-
 
 ## Post Installation
 
@@ -110,7 +110,9 @@ You can set a new password opening the Console through Portainer and typing `pih
 
 You can find more commands to run [here](https://docs.pi-hole.net/core/pihole-command/).
 
-With the admin password, go to `http://<Raspberry IP>:1010/admin` to access Pi-Hole web interface and log in.
+With the admin password, go to `http://<Raspberry IP>/admin` to access Pi-Hole web interface and log in.
+
+Change the DNS settings *Interface listening behavior* to "Listen on all interfaces, permit all origins", if using Docker's default `bridge` network setting. (This can also be achieved by setting the environment variable `DNSMASQ_LISTENING` to `all`)
 
 ### Setting Mainstream DNS
 
