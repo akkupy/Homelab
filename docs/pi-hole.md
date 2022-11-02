@@ -15,7 +15,14 @@ There is 2 options available:
 
 ## Pi-Hole Installation
 
-## Method: 1
+## Method: 1 (Auto)
+
+1. Run the following script
+```
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_pi_hole.sh | sudo bash
+```
+
+## Method: 2 (Manual)
 
 1. Copy docker-compose.yml.example to docker-compose.yml and update as needed. See example below:
 [Docker-compose](https://docs.docker.com/compose/install/) example:
@@ -50,13 +57,6 @@ services:
 
 3. Use the Pi-hole web UI to change the DNS settings *Interface listening behavior* to "Listen on all interfaces, permit all origins", if using Docker's default `bridge` network setting. (This can also be achieved by setting the environment variable `DNSMASQ_LISTENING` to `all`)
 
-
-## Method: 2
-
-1. Run the following script
-```
-wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/.sh | sudo bash
-```
 
 ## Post Installation
 
