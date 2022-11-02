@@ -24,7 +24,29 @@ wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_
 
 ## Method: 2 (Manual)
 
-1. Copy docker-compose.yml.example to docker-compose.yml and update as needed. See example below:
+### Folder Setup Script
+
+1. First thing we need to do is setup the folder structure. 
+
+Run the following script
+```
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/pi_hole_dir.sh | sudo bash
+```
+
+2. Now we need to move into that directory using the following:
+
+```
+cd /home/$USER/pi_hole
+```
+
+3. We now need to open the docker-compose.yml file using nano editor.
+
+```
+nano docker-compose.yml
+```
+Copy and paste the below Docker-compose exmple into the docker-compose.yml file.
+
+See example below:
 [Docker-compose](https://docs.docker.com/compose/install/) example:
 
 ```yaml
@@ -53,9 +75,27 @@ services:
       - NET_ADMIN # Required if you are using Pi-hole as your DHCP server, else not needed
     restart: unless-stopped
 ```
-2. Run `docker-compose up -d` to build and start pi-hole
+4. Once you have done that press “Ctrl + X” then Y to save and “Enter” to exit the nano editor.
 
-3. Use the Pi-hole web UI to change the DNS settings *Interface listening behavior* to "Listen on all interfaces, permit all origins", if using Docker's default `bridge` network setting. (This can also be achieved by setting the environment variable `DNSMASQ_LISTENING` to `all`)
+5. To deploy the dockers run the following command:
+
+```
+sudo docker-compose up -d
+```
+
+This will take some time to finish.
+
+6. Once complete you can check that the docker containers exist by typing the following:
+
+```
+sudo docker ps
+```
+
+Or you can check in Portainer by [logging in via your browser](https://github.com/akkupy/Homelab#login-to-portainer) and navigating to “Containers“.
+
+If you see any problems like “unhealthy” Please restart the container and all should be well.
+
+7. Use the Pi-hole web UI to change the DNS settings *Interface listening behavior* to "Listen on all interfaces, permit all origins", if using Docker's default `bridge` network setting. (This can also be achieved by setting the environment variable `DNSMASQ_LISTENING` to `all`)
 
 
 ## Post Installation
