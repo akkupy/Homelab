@@ -6,6 +6,10 @@
 
 ## Introduction
 
+Bitwarden is a free/freemium open-source password management service that stores sensitive information such as website credentials in an encrypted vault. The platform offers a variety of client applications including a web interface, desktop applications, browser extensions, mobile apps, and a command-line interface.
+
+### Vaultwarden
+
 Alternative implementation of the Bitwarden server API written in Rust and compatible with [upstream Bitwarden clients](https://bitwarden.com/download/)*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.
 
 #### ⚠️**IMPORTANT**⚠️: When using this server, please report any bugs or suggestions to [vaultwarden](https://github.com/dani-garcia/vaultwarden/), regardless of whatever clients you are using (mobile, desktop, browser...). DO NOT use the official support channels.

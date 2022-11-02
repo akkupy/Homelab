@@ -43,6 +43,7 @@ List of all Documents used within this project.
 |[nginx_proxy_manager.md](./docs/nginx_proxy_manager.md)|Install and setup instructions for Nginx Proxy Manager (NPM)|
 |[Self Signed SSL Certificate](https://github.com/akkupy/Self_Signed_SSL_Cerificate)|Follow these steps for SSL Certificate Authority for Local Https Development(can be used with NPM)|
 |[pi-hole.md](./docs/pi-hole.md)|Install and Setup Pi-Hole for Network-Wide Ad Block|
+|[vaultwarden.md](./docs/vaultwarden.md)|Install and Setup Vaultwarden, A privately hosted password manager|
 
 
 
