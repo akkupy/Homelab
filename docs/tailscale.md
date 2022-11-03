@@ -89,3 +89,7 @@ Check out the [doc](https://tailscale.com/kb/1103/exit-nodes/?tab=linux#step-3-u
 You can verify that your traffic is routed by another device by checking your public IP address using [online tools](https://www.whatismyip.com/). You should see the exit node’s public IP rather than your local device’s IP.
 
 You can disable routing through the exit node at any time by selecting None from the same menu used in step 5.
+
+### Official Doc
+
+[Tailscale](https://tailscale.com/kb/)
