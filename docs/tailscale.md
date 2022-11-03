@@ -90,6 +90,6 @@ You can verify that your traffic is routed by another device by checking your pu
 
 You can disable routing through the exit node at any time by selecting None from the same menu used in step 5.
 
-### Official Doc
+### Official Documentation
 
 [Tailscale](https://tailscale.com/kb/)
