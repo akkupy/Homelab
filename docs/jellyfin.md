@@ -34,5 +34,6 @@ Hardware acceleration users for Raspberry Pi V4L2 will need to mount their /dev/
 
 Webui can be found at http://<your-ip>:8096
 
+
 More information can be found on the official documentation [here](https://jellyfin.org/docs/general/quick-start/).
 
