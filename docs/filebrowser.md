@@ -19,6 +19,6 @@ This will preserve any persistent data under /filebrowser of User Directory, you
 
 ## Post Installation
 
-Access the web UI through http://<ip>:8123 or using reverse proxy.
+Access the web UI through http://raspberry_ip:8123 or using reverse proxy.
 
 **NOTE**: Default username: admin and password: admin
