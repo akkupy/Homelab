@@ -42,7 +42,7 @@ wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_
 
 This will preserve any persistent data under /jellyfin of User Directory, you can adapt the path to whatever suits you.
 
-**NOTE**:Inside jellyfin folder,there will be 2 folders 'movies' and 'tvseries',where you can add the movies and series.
+**NOTE**: Inside jellyfin folder,there will be 2 folders 'movies' and 'tvseries',where you can add the movies and series.
 
 
 ## Method 2 (Manual,**Recommended**):
