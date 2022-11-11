@@ -41,6 +41,7 @@ wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_
 ```
 
 This will preserve any persistent data under /jellyfin of User Directory, you can adapt the path to whatever suits you.
+
 **NOTE:**Inside jellyfin folder,there will be 2 folders 'movies' and 'tvseries',where you can add the movies and series.
 
 
@@ -122,10 +123,13 @@ Or you can check in Portainer by [logging in via your browser](https://github.co
 
 If you see any problems like “unhealthy” Please restart the container and all should be well.
 
-## Application Setup
+## Post Installation
 
 Webui can be found at http://<your-ip>:8096
 
+Follow the on-screen setup.
+
+Movies placed in movies folder and tv-series placed in tvseries folder can be found in the home page.
 
 More information can be found on the official documentation [here](https://jellyfin.org/docs/general/quick-start/).
 
