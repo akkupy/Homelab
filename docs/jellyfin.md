@@ -30,6 +30,98 @@ Hardware acceleration users for Raspberry Pi V4L2 will need to mount their /dev/
 --device=/dev/video12:/dev/video12
 ```
 
+# Installation
+
+## Method 1 (Auto,**Not Recommended**):
+
+1. **Run the following script**
+
+```
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_jellyfin.sh | sudo bash
+```
+
+This will preserve any persistent data under /jellyfin of User Directory, you can adapt the path to whatever suits you.
+**NOTE:**Inside jellyfin folder,there will be 2 folders 'movies' and 'tvseries',where you can add the movies and series.
+
+
+## Method 2 (Manual,**Recommended**):
+
+### Folder Setup Script
+
+1. First thing we need to do is setup the folder structure. 
+
+Run the following code
+```
+sudo mkdir -p /home/$USER/jellyfin
+```
+
+2. Now we need to move into that directory using the following:
+
+```
+cd /home/$USER/jellyfin
+```
+3. Create a folder named config for storing jellyfin configurations.
+
+Run the following code
+```
+sudo mkdir -p /home/$USER/jellyfin/config
+```
+4. We now need to open the docker-compose.yml file using nano editor.
+
+```
+nano docker-compose.yml
+```
+Copy and paste the below Docker-compose exmple into the docker-compose.yml file.
+
+NOTE : Change the TimeZone and Conflicting ports according to your needs.
+
+**IMPORTANT NOTE:**Point the path to tvseries and movies according to your needs(External Drive is Recommended).
+
+See example below:
+[Docker-compose](https://docs.docker.com/compose/install/) example:
+
+```yaml
+version: "2.1"
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
+    volumes:
+      - /home/$USER/jellyfin/config:/config
+      - /path/to/tvseries:/data/tvshows
+      - /path/to/movies:/data/movies
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    restart: unless-stopped
+```
+4. Once you have done that press “Ctrl + X” then Y to save and “Enter” to exit the nano editor.
+
+5. To deploy the dockers run the following command:
+
+```
+sudo docker-compose up -d
+```
+
+This will take some time to finish.
+
+6. Once complete you can check that the docker containers exist by typing the following:
+
+```
+sudo docker ps
+```
+
+Or you can check in Portainer by [logging in via your browser](https://github.com/akkupy/Homelab#login-to-portainer) and navigating to “Containers“.
+
+If you see any problems like “unhealthy” Please restart the container and all should be well.
+
 ## Application Setup
 
 Webui can be found at http://<your-ip>:8096
