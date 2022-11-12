@@ -266,3 +266,5 @@ Assuming there are no errors your new host has been created and you will be retu
 # Additional documentation
 
 Additional documentation can be found at https://nginxproxymanager.com/guide/ .
+
+(Optional): Configure Reverse Proxy using the documentation [here](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md#first-proxy-host-setup)
