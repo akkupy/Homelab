@@ -127,6 +127,8 @@ If you see any problems like “unhealthy” Please restart the container and al
 
 Webui can be found at http://<your-ip>:8096
 
+(Optional): Configure Reverse Proxy using the documentation [here](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md#first-proxy-host-setup)
+
 Follow the on-screen setup.
 
 Movies placed in movies folder and tv-series placed in tvseries folder can be found in the home page.

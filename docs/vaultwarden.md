@@ -59,6 +59,8 @@ If you have an available domain name, you can get HTTPS certificates with [Let's
 
 # Post Installation
 
+(Optional): Configure Reverse Proxy using the documentation [here](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md#first-proxy-host-setup)
+
 Access the Web UI by going to <https://raspberrypi_ip:4001> or by using the Nginx Reverse Proxy Domain Address.
 
 Sign up a new account and start using the service.

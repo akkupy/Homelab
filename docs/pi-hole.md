@@ -105,6 +105,8 @@ You can find more commands to run [here](https://docs.pi-hole.net/core/pihole-co
 
 With the admin password, go to `http://<Raspberry IP>:4000/admin` to access Pi-Hole web interface and log in.
 
+(Optional): Configure Reverse Proxy using the documentation [here](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md#first-proxy-host-setup)
+
 Change the DNS settings *Interface listening behavior* to "Listen on all interfaces, permit all origins", if using Docker's default `bridge` network setting. (This can also be achieved by setting the environment variable `DNSMASQ_LISTENING` to `all`)
 
 ### Setting Mainstream DNS

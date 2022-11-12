@@ -21,4 +21,6 @@ This will preserve any persistent data under /filebrowser of User Directory, you
 
 Access the web UI through http://raspberry_ip:8123 or using reverse proxy.
 
+(Optional): Configure Reverse Proxy using the documentation [here](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md#first-proxy-host-setup)
+
 **NOTE**: Default username: admin and password: admin
