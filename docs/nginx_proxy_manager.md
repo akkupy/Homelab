@@ -237,7 +237,11 @@ Some applications will use Websockets if the app uses this you will need to enab
 
 > Hint: Generating Certificates can be complicated I will be outlining one of the simplest ways to generate one.  There are other ways not outlined here.
 
-Now we need to setup our secure https connection to the server.  Select the SSL tab.  Under SSL Certificates we are going to select Request a new SSL Certificate
+Now we need to setup our secure https connection to the server.  Select the SSL tab.
+
+## Method 1(Recommended for internet based usage):
+
+Under SSL Certificates we are going to select Request a new SSL Certificate.
 
 I am also going to select Force SSL this will prevent non-secure connections from being used.  
 
@@ -248,6 +252,12 @@ It should have your correct email address listed if it doesn't please fix as thi
 ![Proxy Hosts](https://raw.githubusercontent.com/akkupy/Homelab/main/images/nginx-proxy-manager-New-Proxy-Host-SSL.png)
 
 Once you click Save it will generate a new certificate this can take a few minutes to do.
+
+## Method 2(Recommended for Local usage and usage with [tailscale](https://github.com/akkupy/Homelab/blob/main/docs/tailscale.md)):
+
+You can use a self generated SSL certificate(which can be generated [here](https://github.com/akkupy/Self_Signed_SSL_Cerificate)).In this case select Custom under the SSL Certificates and upload the key and certificate generated.
+
+### Post SSL Certificate Gerneration
 
 Assuming there are no errors your new host has been created and you will be returned to the proxy host screen.  Below is an example of what the screen will look like with several hosts added.
 
