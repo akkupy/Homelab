@@ -97,7 +97,7 @@ If you see any problems like “unhealthy” Please restart the container and al
 
 # Post Installation
 
-The webui is at <your-ip>:8080 and the default username/password is admin/adminadmin.
+The webui is at your-ip:8080 and the default username/password is admin/adminadmin.
 
 Change username/password via the webui in the webui section of settings.
 
