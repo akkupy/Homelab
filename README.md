@@ -51,9 +51,6 @@ List of all Documents used within this project.
 
 
 
-
-
-
 # Contact Me
  [![telegram](https://img.shields.io/badge/Akku-000000?style=for-the-badge&logo=telegram)](https://t.me/akkupy)
 
