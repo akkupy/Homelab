@@ -49,6 +49,8 @@ List of all Documents used within this project.
 |[heimdall.md](./docs/heimdall.md)|Install and Setup Heimdall, Organise all those links to your most used web sites and web applications in a simple way.|
 |[qbittorrent.md](./docs/qbittorrent.md)|Install and Setup Qbittorrent, An open-source software alternative to µTorrent.|
 |[sonarr.md](./docs/sonarr.md)|Install and Setup sonarr, a PVR for usenet and bittorrent users.|
+|[radarr.md](./docs/radarr.md)|Install and Setup radarr, A fork of Sonarr to work with movies à la Couchpotato.|
+
 
 
 
