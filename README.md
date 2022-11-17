@@ -4,6 +4,10 @@ This repository is a collection of steps for hosting a variety of server applica
 
 ![alt text](https://github.com/akkupy/Homelab/blob/main/images/rpi4.jpg?raw=true)
 
+## Prerequisite
+
+[Raspberry Pi 4](https://robu.in/product/raspberry-pi-4-model-b-with-4-gb-ram/),[Micro SD Card](https://www.amazon.in/gp/product/B082WPGKT6),[Heat Sink](https://robu.in/product/black-4-in-1-heat-sink-set-aluminum-for-raspberry-pi-4b/),[Power Supply](https://www.amazon.in/gp/product/B07XY8F3P7/),[Rpi4 Case With Fan](https://www.amazon.in/gp/product/B082ZQSHFZ/),(Optional)[Micro HDMI to HDMI](https://www.amazon.in/gp/product/B08PW6W54V/),(Optional)[External HDD](https://www.flipkart.com/wd-1-5-tb-wired-external-hard-disk-drive-hdd/p/itmfcyh2wheuvhbk),
+
 ### Installation of Docker and Portainer.
 Run `install_docker.sh`, to install docker, and add the current user to the docker usergroup.
 
