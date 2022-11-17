@@ -14,6 +14,38 @@ This repository is a collection of steps for hosting a variety of server applica
 * [Micro HDMI to HDMI](https://www.amazon.in/gp/product/B08PW6W54V/)(Optional)
 * [External HDD](https://www.flipkart.com/wd-1-5-tb-wired-external-hard-disk-drive-hdd/p/itmfcyh2wheuvhbk)(Optional)
 
+## Installing Operating System
+
+I recommend the use of [Raspberry Pi Imager](https://www.raspberrypi.com/software/) to install an operating system on to your SD card. You will need another computer with an SD card reader to install the image. Raspberry Pi Imager can be run on another Raspberry Pi, but also works on Microsoft Windows, Apple macOS, and Linux.
+
+**USING RASPBERRY PI IMAGER**
+
+Raspberry Pi have developed a graphical SD card writing tool that works on Mac OS, Ubuntu 18.04, and Windows called [Raspberry Pi Imager](https://www.raspberrypi.com/software/); this is the easiest option for most users since it will download the image automatically and install it to the SD card.
+
+Download the latest version of Raspberry Pi Imager and install it. If you want to use Raspberry Pi Imager from a second Raspberry Pi, you can install it from a terminal using "sudo apt install rpi-imager". Then:
+
+* Connect an SD card reader with the SD card inside.
+
+* Open Raspberry Pi Imager and choose the Raspberry Pi OS Lite (64bit) from the list presented.
+
+* Choose the SD card you wish to write your image to.
+
+* After you have selected the operating system to install, a cog wheel will appear allowing you to open an "Advanced Options" menu.
+
+* Set Hostname as raspberry.local and Enable SSH(password authentication) and Configure Wifi(Optional) and configure User on the advanced options.
+
+* Review your selections and click on the Write button to begin writing data to the SD Card.
+
+## Post OS Installation
+
+SSH into the pi using the raspberrypi.local hostname or the corresponding IP of pi given by the Router/DHCP server.
+
+Update and Upgrade the raspbery pi using the code below
+
+```
+sudo apt update && sudo apt upgrade -y
+```
+
 ### Installation of Docker and Portainer.
 Run `install_docker.sh`, to install docker, and add the current user to the docker usergroup.
 
