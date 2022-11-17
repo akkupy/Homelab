@@ -38,9 +38,9 @@ Download the latest version of Raspberry Pi Imager and install it. If you want t
 
 ## Post OS Installation
 
-SSH into the pi using the raspberrypi.local hostname or the corresponding IP of pi given by the Router/DHCP server.
+SSH into the pi using the raspberrypi.local hostname or the corresponding ip address of pi given by the Router/DHCP server.
 
-Update and Upgrade the raspbery pi using the code below
+Update and Upgrade the raspberry pi using the code below
 
 ```
 sudo apt update && sudo apt upgrade -y
