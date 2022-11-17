@@ -38,6 +38,10 @@ Download the latest version of Raspberry Pi Imager and install it. If you want t
 
 ## Post OS Installation
 
+Connect the SD Card into the Raspberry PI 4 and assemble the pi inside its case and attach the heat sink and fan.
+
+Connect the Raspbbery pi into the network using Ethernet(Recommended) or WiFi.
+
 SSH into the pi using the raspberrypi.local hostname or the corresponding ip address of pi given by the Router/DHCP server.
 
 Update and Upgrade the raspberry pi using the code below
