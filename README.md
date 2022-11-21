@@ -76,7 +76,7 @@ Goto raspberry_ip:9000 and then login.
 
 Now just click App Templates and deploy applications!.
 
-### List of Documentation files.
+# List of Documentation files.
 
 
 List of all Documents used within this project.
