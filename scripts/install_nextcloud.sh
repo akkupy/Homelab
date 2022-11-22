@@ -21,7 +21,7 @@ docker run --name mysql \
     -e MYSQL_DATABASE=nextcloud \
     -e MYSQL_USER=nextcloud \
     -e MYSQL_PASSWORD=nextcloud \
-    -v /home/$USER/mysql:/var/lib/mysql
+    -v /home/$USER/mysql:/var/lib/mysql \
     --restart unless-stopped \
     -d mysql
 echo "Initialising nextcloud"
