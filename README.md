@@ -98,6 +98,7 @@ List of all Documents used within this project.
 |[radarr.md](./docs/radarr.md)|Install and Setup radarr, A fork of Sonarr to work with movies à la Couchpotato.|
 |[jackett.md](./docs/jackett.md)|Install and Setup jackett, translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.|
 |[nextcloud.md](./docs/nextcloud.md)|Install and Setup nextcloud, A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.|
+|[Z-Vote](https://github.com/akkupy/Z-Vote/tree/production)|Install and Setup Z-Vote, A Blockchain based Voting System|
 
 
 
