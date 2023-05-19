@@ -8,6 +8,6 @@ function error {
 
 
 echo "Creating directories..."
-sudo mkdir -p /home/$USER/zvote || error "Failed to create zvote folder!"
-sudo mkdir -p /home/$USER/zvote/nginx || error "Failed to create zvote/nginx folder!"
+sudo mkdir -p /home/$USER/Z-Vote || error "Failed to create Z-Vote folder!"
+sudo mkdir -p /home/$USER/Z-Vote/nginx || error "Failed to create Z-Vote/nginx folder!"
 echo "Done !"
