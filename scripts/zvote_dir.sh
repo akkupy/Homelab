@@ -9,4 +9,5 @@ function error {
 
 echo "Creating directories..."
 sudo mkdir -p /home/$USER/zvote || error "Failed to create zvote folder!"
+sudo mkdir -p /home/$USER/zvote/nginx || error "Failed to create zvote/nginx folder!"
 echo "Done !"
