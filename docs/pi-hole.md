@@ -12,7 +12,7 @@
 
 1. Run the following script
 ```
-wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_pi_hole.sh | sudo bash
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_pi_hole.sh | bash
 ```
 
 ## Method: 2 (Manual)

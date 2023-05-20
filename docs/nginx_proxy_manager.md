@@ -18,13 +18,13 @@ First thing we need to do is setup the folder structure and install some files t
 
 Run the following script
 ```
-wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_nginx_proxy_manager.sh | sudo bash
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_nginx_proxy_manager.sh | bash
 ```
 
 Your output should look something like this
 
 ```
-# wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_nginx_proxy_manager.sh | sudo bash
+# wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_nginx_proxy_manager.sh | bash
 Creating directories...
 Creating a blank nginx-proxy-manager config files
 Creating a blank docker compose file

@@ -21,7 +21,7 @@ Alternative implementation of the Bitwarden server API written in Rust and compa
 1. **Run the following script**
 
 ```
-wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_vaultwarden.sh | sudo bash
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_vaultwarden.sh | bash
 ```
 
 This will preserve any persistent data under /vaultwarden of User Directory, you can adapt the path to whatever suits you.

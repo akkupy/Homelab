@@ -13,7 +13,7 @@ The [Qbittorrent](https://www.qbittorrent.org/) project aims to provide an open-
 1. **Run the following script**
 
 ```
-wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_qbittorrent.sh | sudo bash
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/install_qbittorrent.sh | bash
 ```
 
 This will preserve any persistent data under /qbittorrent of User Directory, you can adapt the path to whatever suits you.
