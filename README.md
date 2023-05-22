@@ -76,6 +76,12 @@ Goto raspberry_ip:9000 and then login.
 
 Now just click App Templates and deploy applications!.
 
+## Update Portainer Script.
+
+```
+wget -qO- https://raw.githubusercontent.com/akkupy/Homelab/main/scripts/update_portainer.sh | bash
+```
+
 # List of Documentation files.
 
 
