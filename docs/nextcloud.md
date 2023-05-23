@@ -60,10 +60,14 @@ services:
       - PGID=1000
       - TZ=Asia/Kolkata
     volumes:
-      - /home/$USER/nextcloud:/var/www/html
+      - /home/$USER/nextcloud:/var/www/html/data
     ports:
       - 7000:80
     restart: unless-stopped
+    networks:
+      - nextcloud_network
+    depends_on:
+      - mysql
   mysql:
     image: mysql
     container_name: mysql
@@ -75,6 +79,14 @@ services:
     volumes:
       - /home/$USER/mysql:/var/lib/mysql
     restart: unless-stopped
+    networks:
+      - nextcloud_network
+
+networks:
+    nextcloud_network:
+      driver: bridge
+
+
 ```
 4. Once you have done that press “Ctrl + X” then Y to save and “Enter” to exit the nano editor.
 
@@ -100,6 +112,6 @@ If you see any problems like “unhealthy” Please restart the container and al
 
 The webui is at your-ip:7000.
 
-Create a new admin username and password in the post-installation menu and set the database as mysql with username->nextcloud password->nextcloud database->nextcloud and leave the remaining as default and Click Install.
+Create a new admin username and password in the post-installation menu and set the database as mysql with username->nextcloud password->nextcloud database->nextcloud and host->mysql and Click Install.
 
 (Optional): Configure Reverse Proxy using the documentation [here](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md#first-proxy-host-setup)
