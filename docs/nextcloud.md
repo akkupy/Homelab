@@ -115,3 +115,7 @@ The webui is at your-ip:7000.
 Create a new admin username and password in the post-installation menu and set the database as mysql with username->nextcloud password->nextcloud database->nextcloud and host->mysql and Click Install.
 
 (Optional): Configure Reverse Proxy using the documentation [here](https://github.com/akkupy/Homelab/blob/main/docs/nginx_proxy_manager.md#first-proxy-host-setup)
+# Troubleshooting
+
+[Refer here](https://help.nextcloud.com/t/the-polling-url-does-not-start-with-https-despite-the-login-url-started-with-https/137576), Incase you have trouble in log in or connecting client apps.
+
