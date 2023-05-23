@@ -60,7 +60,7 @@ services:
       - PGID=1000
       - TZ=Asia/Kolkata
     volumes:
-      - /home/$USER/nextcloud:/var/www/html/data
+      - /home/$USER/nextcloud:/var/www/html/
     ports:
       - 7000:80
     restart: unless-stopped
