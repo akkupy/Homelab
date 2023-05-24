@@ -15,6 +15,22 @@ function check_internet() {
   fi
 }
 
+function show_ascii_akkupy() {
+    echo -e "
+
+           _    _                      
+     /\   | |  | |                     
+    /  \  | | _| | ___   _ _ __  _   _ 
+   / /\ \ | |/ / |/ / | | | '_ \| | | |
+  / ____ \|   <|   <| |_| | |_) | |_| |
+ /_/    \_\_|\_\_|\_\\__,_| .__/ \__, |
+                          | |     __/ |
+                          |_|    |___/ 
+
+"
+}
+
+show_ascii_akkupy
 check_internet
 
 curl -sSL https://get.docker.com | sh || error "Failed to install Docker."

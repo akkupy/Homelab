@@ -15,6 +15,22 @@ function check_internet() {
   fi
 }
 
+function show_ascii_akkupy() {
+    echo -e "
+
+           _    _                      
+     /\   | |  | |                     
+    /  \  | | _| | ___   _ _ __  _   _ 
+   / /\ \ | |/ / |/ / | | | '_ \| | | |
+  / ____ \|   <|   <| |_| | |_) | |_| |
+ /_/    \_\_|\_\_|\_\\__,_| .__/ \__, |
+                          | |     __/ |
+                          |_|    |___/ 
+
+"
+}
+
+show_ascii_akkupy
 check_internet
 
 sudo docker pull portainer/portainer-ce:latest || error "Failed to pull latest Portainer docker image!"
