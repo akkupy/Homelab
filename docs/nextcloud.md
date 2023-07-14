@@ -53,7 +53,7 @@ See example below:
 version: "2.1"
 services:
   nextcloud:
-    image: nextcloud
+    image: nextcloud:stable
     container_name: nextcloud
     environment:
       - PUID=1000
@@ -69,7 +69,7 @@ services:
     depends_on:
       - mysql
   mysql:
-    image: mysql
+    image: mysql:8.0.33
     container_name: mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
