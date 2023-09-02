@@ -103,6 +103,7 @@ List of all Documents used within this project.
 |[nginx_proxy_manager.md](./docs/nginx_proxy_manager.md)|Install and setup instructions for Nginx Proxy Manager (NPM)|
 |[Self Signed SSL Certificate](https://github.com/akkupy/Self_Signed_SSL_Cerificate)|Follow these steps for SSL Certificate Authority for Local Https Development(can be used with NPM)|
 |[pi-hole.md](./docs/pi-hole.md)|Install and Setup Pi-Hole for Network-Wide Ad Block|
+|[unbound.md](./docs/unbound.md)|Install and Setup Unbound , a validating, recursive, caching DNS resolver.|
 |[vaultwarden.md](./docs/vaultwarden.md)|Install and Setup Vaultwarden, A privately hosted password manager|
 |[rpimonitoring.md](./docs/rpimonitoring.md)|Install and Setup Raspberry Pi & Docker Monitoring, A user-friendly way to monitor the performance of your Raspberry Pi|
 |[jellyfin.md](./docs/jellyfin.md)|Install and Setup Jellyfin, A Software to provide media from a dedicated server to end-user devices via multiple apps|
